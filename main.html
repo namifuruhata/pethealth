@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>犬の健康管理</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=M+PLUS+Rounded+1c:wght@100;300;400;700;800&family=Noto+Sans+JP:wght@100;200;300;400;500;900&family=Rubik+Dirt&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="main.html">
+            <div class="logo">
+            <img src="images/logo.png"  aly="ヘッダーロゴ" >
+            </div>
+        </a>
+    </header>
+
+    <main>
+      
+        <div class="nyuuryoku_group">
+            <div class="una_group">
+            <div class="una">
+                <img src="images/una.png" alt="トップ画像">
+            </div>
+            <div class="profile">
+            <p>うな</p>
+            <p>女の子</p>
+            <p>2021/05/08生まれ</p>
+            <ul class="menu-group2">
+                <li class="menu-item2"><a href="main.html">ホーム</a></li>
+        <li class="menu-item2"><a href="#" onclick="displayCondition()">体調</a></li>
+            <li class="menu-item2"><a href="#" onclick="toggleWeightChartDisplay()">体重</a></li>
+        <li class="menu-item2"><a href="#" onclick="toggleWalkTimeChartDisplay()">散歩時間</a></li>
+                <li class="menu-item2"><a href="access.html">おやつ</a></li>
+                <li class="menu-item2"><a href="contact.html">ごはん</a></li>
+            </ul>
+            </div>
+            </div>
+          <!-- <div class="all">  -->
+        <div class="today_group">
+        <p class="today">今日の記録をする</p>
+        <div class="marquee">
+            <div class="marquee-content">
+            </div>
+        </div>
+        <div class="today_nyuuryoku_group">
+        <div class="data_name">
+            <p>日付</p>
+            <p>体調</p>
+            <p>体重</p>
+            <p>散歩時間</p>
+            <p>おやつ</p>
+            <p>ごはん</p>
+            <p>日記</p>
+        </div>
+        
+
+    <div class="nyuuryoku">
+        <input type="date" id="date" class="nyuuryokuform">
+        <input type="text" id="condition" class="nyuuryokuform">
+        <input type="text" id="weight" class="nyuuryokuform">
+        <input type="text" id="walk_time" class="nyuuryokuform">
+        <input type="text" id="snack" class="nyuuryokuform">
+        <input type="text" id="food" class="nyuuryokuform">
+        <textarea id="diary" class="nyuuryokuform"></textarea>
+    </div>
+    </div>
+    </div>
+
+<div class="data2tltle_group">
+    <p class="today">記録を確認</p>
+    <div class="data_name2">
+    <div class="data2_back">
+    <ul>
+        <li id="save">保存</li>
+        <li id="display">表示</li>
+        <li id="hide">非表示</li>
+        <li id="clear">クリア</li>
+    </ul>
+    <div class="data_hyouzi">
+    <div id="past_entries"></div>
+    <div id="entry_display"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- </div> -->
+
+
+<!--グラフ-->
+    <div class="chart_group">
+        <div style="position:relative;width:1200px;height:auto;">
+            <canvas id="weightChart"></canvas>
+            <canvas id="walkTimeChart"></canvas>
+        </div>
+        </div>
+    </main>
+
+    <!--表のスクロール-->
+    <div id="past_entries" class="scrollable"></div>
+    
+<footer>
+    <img src="images/logo.png" aly="フッターロゴ" class="footerlogo">
+    <!-- <div class="snslogo">
+        <a href="https://www.instagram.com/gsacademy_fukuoka/">
+            <img src="images/1.png" alt="インスタ" class="instalogo">
+        </a>
+        <a href="https://twitter.com/gsfukuoka?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="images/2.png" alt="X" class="xlogo">
+    </div> -->
+    </a>
+    <p>@2023 pet health record</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>

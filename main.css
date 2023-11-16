@@ -1,0 +1,346 @@
+body {
+    font-family: 'Noto Sans JP';
+    background-color: #f0c4c43b;
+}
+
+/* .all {
+    display: flex;
+    flex-direction: column;
+} */
+header {
+    background-color: #ffffffc9;
+    height: 80px;
+    border: 1px solid #ffffff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-group {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    width: 50%;
+    margin: -15px 0px 0px 450px;
+
+}
+
+.menu-item {
+    list-style: none;
+    margin-right: 40px;
+    font-size: 15px;
+  
+}
+
+.menu-item a  {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.menu-item a:hover {
+    color: #707070;
+}
+
+.logo img {
+    width: auto;
+    height: 70px;
+    margin-left: 20px;
+}
+
+/*-------------------------*/
+
+.nyuuryoku {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    margin: 50px 30px 0px 30px;
+    
+}
+
+.nyuuryokuform {
+
+    margin: 0px 0px 20px 0px;
+    width: 200px;
+ 
+}
+
+
+.nyuuryoku_group {
+    display: flex;
+    margin-top: 150px;
+}
+
+.data_name {
+    margin-top: 50px;
+}
+
+.data_name p {
+    margin: 0px 20px 20px 30px;
+    list-style: none;
+
+}
+
+.save_clear_button li {
+    text-align: center;
+    list-style-type: none;
+   border: 1px solid #d7d7d7;
+    background-color: #FFF;
+    display: table-cell;
+    /* 定義 */
+    cursor: pointer;
+}
+/* 
+li:hover {
+    background: #0066CC;
+    color: #fff;
+} */
+
+
+/* footer */
+
+footer {
+    font-size: 12px;
+    color: #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 32px 0px 32px 0px;
+}
+
+.footerlogo {
+    width: auto;
+    height: 50px;
+}
+
+.xlogo,
+.instalogo {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.snslogo {
+    display: flex;
+    justify-content: center;
+}
+
+.una img {
+    width: 250px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.purofile {
+    display: flex;
+    
+}
+
+.profile p {
+        padding: 0px 20px 0px 20px;
+        text-align: center;
+}
+
+.menu-group2 {
+    padding: 0px 20px 0px 20px;
+    margin: 50px;
+}
+
+.menu-item2 a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.menu-item2 {
+    list-style: none;
+    font-size: 15px;
+        background-color: #dd8080;
+        border-radius: 5px;
+        padding: 5px 30px 5px 30px;
+        text-align: center;
+        margin: 0px 10px 20px 0px;
+        list-style-type: none;
+}
+
+.una_group {
+    background-color: #FFF;
+border: 1px solid #d7d7d7;
+    margin: 0px 0px 100px 50px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    
+
+}
+
+.today_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.today {
+    font-size: 20px;
+    margin: 0px 0px 15px 40px;
+}
+
+.today_nyuuryoku_group {
+    display: flex;
+    background-color: #ffffff;
+        border: 1px solid #d7d7d7;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 10px;
+}
+
+
+.data_name2 {
+display: flex;
+
+}
+
+.data2tltle_group {
+
+display: flex;
+flex-direction: column;
+}
+
+#save,
+#display,
+#hide,
+#clear,
+#prev,
+#next {
+
+color: #efefef;
+background-color: #dd8080;
+border-radius: 5px;
+padding: 5px 10px 5px 10px;
+text-align: center;
+margin: -10px 10px 0px 0px;
+list-style-type: none;
+}
+
+#save:hover,
+#display:hover,
+#hide:hover,
+#clear:hover,
+#prev:hover,
+#next:hover,
+.menu-item2:hover {
+color: #efefefdf;
+    background-color: #dd80807e;
+}
+
+.data2_back {
+    display: flex;
+    flex-direction: column;
+        /* background-color: #ffffff;
+        border-radius: 10px; */
+                /* padding: 50px 100px 100px 0px; */
+        
+}
+
+.data2_back ul {
+    display: flex;
+}
+
+/*--------表示後----------*/
+.entry {
+    position: relative;
+        z-index: 1;
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    border-radius: 10px;
+padding: 30px 200px;
+            margin: 0px 0px 50px 40px;
+
+}
+
+.entry p {
+    margin-bottom: 20px;
+    /* 段落間の余白 */
+    margin-left: -150px;
+}
+
+
+/*バナー*/
+.marquee {
+    overflow: hidden;
+    /* テキストがdivの外に出ないようにする */
+    white-space: nowrap;
+    /* テキストを一行に保つ */
+background: linear-gradient(#dd8080, #f0c3c3, #e0d4d4);
+    /* バナーの背景色 */
+    color: #ffffff;
+    /* テキストの色 */
+    padding: 10px 0;
+    /* 上下のパディング */
+    margin-left: 30px;
+}
+
+.marquee-content {
+    display: inline-block;
+ 
+    padding-left: 100%;
+    /* 最初の表示位置 */
+    animation: marquee 10s linear infinite;
+    /* アニメーションの設定 */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*体重----散歩--*/
+#walkTimeChart,
+#weightChart {
+
+    margin: -300px 0px 300px 400px;
+   
+}
+
+
+
+
+/*体調んだど*/
+
+#tableContainer {
+    border: 1px solid grey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead th {
+    background-color: black;
+    color: white;
+}
+
+table tbody td {
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+}
+
+
+/*スクロール*/
+.scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.entry {
+    display: inline-block;
+    /* 必要に応じて他のスタイリングを追加 */
+}
